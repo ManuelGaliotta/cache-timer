@@ -36,7 +36,7 @@ const now = atom({ plugin: 'cache-timer', key: 'now' } as const, 0)
 
 const HANDOFF_PROMPT =
   'La prompt cache di questa sessione scade tra pochi minuti. ' +
-  'Esegui ora la skill `handoff` (tool Skill, skill "handoff") per salvare lo stato del lavoro, ' +
+  'Esegui ora la skill `handoff` (tool Skill, skill "handoff" oppure "cache-timer:handoff", quella disponibile) per salvare lo stato del lavoro, ' +
   'così la prossima sessione può ripartire da lì. Non iniziare altro lavoro.'
 
 const clamp01 = (x: number) => Math.min(1, Math.max(0, x))

@@ -15,13 +15,11 @@ In più:
 - **Al primo messaggio dopo la scadenza** lo ferma con un avviso che consiglia di aprire una nuova sessione
   e scrivere «riprendi dall'ultimo handoff»; reinviando il messaggio si continua nella sessione.
 
-La skill `handoff` non è inclusa: senza di lei la mod mostra comunque le barre, ma l'handoff automatico
-non salva nulla. Il TTL della cache è fisso a 1 ora (`TTL_MS` in `hooks/register.tsx`).
+La skill `handoff` è inclusa nel plugin (`skills/handoff/`, invocabile come `cache-timer:handoff`): salva la
+nota di ripresa in `~/.claude/handoffs/<nome-cartella-progetto>/`. Il TTL della cache è fisso a 1 ora
+(`TTL_MS` in `hooks/register.tsx`).
 
 ## Installazione
-
-Il repository è privato: serve l'accesso in lettura su GitHub e una credenziale git per github.com già
-presente sul computer (una chiave SSH, oppure `gh auth login` e poi `gh auth setup-git`).
 
 Al prompt di una sessione Claude Code nel terminale:
 
