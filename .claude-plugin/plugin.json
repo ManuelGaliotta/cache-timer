@@ -1,0 +1,6 @@
+{
+  "name": "cache-timer",
+  "version": "0.1.0",
+  "description": "Mostra sopra il prompt i token in cache e il tempo rimasto prima che la cache scada; prima della scadenza lancia la skill handoff e alla ripresa propone una nuova sessione.",
+  "types": "./types/index.d.ts"
+}
